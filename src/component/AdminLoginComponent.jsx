@@ -42,7 +42,7 @@ class AdminLoginComponent extends Component {
                 localStorage.setItem('jwtToken', res.data.token);
                 
                
-                axios.get('http://localhost:8080/medilife/forUser?userName=' + datas['userName']).then(
+                axios.get('http://3.7.54.175:8080/medilife/forUser?userName=' + datas['userName']).then(
                     response => {
                         localStorage.setItem('adminDetail', JSON.stringify(response.data.userName));
                         this.props.history.push("/");

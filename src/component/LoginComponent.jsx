@@ -43,7 +43,7 @@ class LoginComponent extends Component {
 
                 
               
-                axios.get('http://localhost:8080/medilife/forUser?userName=' + datas['userName']).then(
+                axios.get('http://3.7.54.175:8080/medilife/forUser?userName=' + datas['userName']).then(
                     response => {
 
 
